@@ -49,9 +49,6 @@ class Cafe:
                         else:
                             self.tables[x].guest = None
 
-    def any_guest_still_seated(self):
-        return any(table.guest is not None for table in self.tables.values())
-
 
 # Создание столов
 tables = [Table(number) for number in range(1, 6)]
